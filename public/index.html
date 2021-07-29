@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<div id="flipkart-navbar">
+    <div class="container">
+        <div class="row row1">
+            <ul class="largenav pull-right">
+              <li class="upper-links"><a class="links" href="http://clashhacks.in/">Ikuti kami di:</a></li>              
+              <li class="upper-links"><a class="links" href="http://clashhacks.in/"><img src="img/youtube.png" alt="youtube">PWA</a></li>
+                <li class="upper-links"><a class="links" href="https://campusbox.org/"><img src="img/twicth.png" alt="twicth">PWA</a></li>
+                <li class="upper-links"><a class="links" href="http://clashhacks.in/"><img src="img/discord.png" alt="discord">PWA</a></li>
+                <li class="upper-links"><a class="links" href="http://clashhacks.in/"><img src="img/instragram.png" alt="instragram">PWA</a></li>
+                <li class="upper-links"><a class="links" href="http://clashhacks.in/"><img src="img/facebook.png" alt="facebook">PWA</a></li>
+                <li class="upper-links"><a class="links" href="http://clashhacks.in/"><img src="img/twiter.png" alt="twiter">PWA</a></li>
+                <li class="upper-links"><a class="links" href="http://clashhacks.in/"><img src="img/whatsapp.png" alt="whatsapp">PWA</a></li>
+                <li class="upper-links">
+                    <a class="links" href="http://clashhacks.in/">
+                        <svg class="" width="16px" height="12px" style="overflow: visible;">
+                            <path d="M8.037 17.546c1.487 0 2.417-.93 2.417-2.417H5.62c0 1.486.93 2.415 2.417 2.415m5.315-6.463v-2.97h-.005c-.044-3.266-1.67-5.46-4.337-5.98v-.81C9.01.622 8.436.05 7.735.05 7.033.05 6.46.624 6.46 1.325v.808c-2.667.52-4.294 2.716-4.338 5.98h-.005v2.972l-1.843 1.42v1.376h14.92v-1.375l-1.842-1.42z" fill="#fff"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="upper-links dropdown"><a class="links" href="http://clashhacks.in/">Dropdown</a>
+                    <ul class="dropdown-menu">
+       <div><a href="#">Web Design, Development</a></div>
+       <div><a href="#">Web UX Design, Reasearch</a></div>
+       <div><a href="#">Web User Interface Design</a></div>
+       <div><a href="#">Theme Development, Design</a></div>
+       <div><a href="#">Mobile Application Design</a></div>
+       <div><a href="#">Wire raming & Prototyping</a></div>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="row row2">
+            <div class="col-sm-2">
+                <h2 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">☰ PWA</span></h2>
+                <h1 style="margin:0px;"><span class="largenav">PWA</span></h1>
+            </div>
+            <div class="flipkart-navbar-search smallsearch col-sm-8 col-xs-11">
+                <div class="row">
+                    <input class="flipkart-navbar-input col-xs-11" type="" placeholder="Search for Products, Brands and more" name="">
+                    <button class="flipkart-navbar-button col-xs-1">
+                        <svg width="15px" height="15px">
+                            <path d="M11.618 9.897l4.224 4.212c.092.09.1.23.02.312l-1.464 1.46c-.08.08-.222.072-.314-.02L9.868 11.66M6.486 10.9c-2.42 0-4.38-1.955-4.38-4.367 0-2.413 1.96-4.37 4.38-4.37s4.38 1.957 4.38 4.37c0 2.412-1.96 4.368-4.38 4.368m0-10.834C2.904.066 0 2.96 0 6.533 0 10.105 2.904 13 6.486 13s6.487-2.895 6.487-6.467c0-3.572-2.905-6.467-6.487-6.467 "></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="cart largenav col-sm-2">
+                <a class="cart-button">
+                    <svg class="cart-svg " width="16 " height="16 " viewBox="0 0 16 16 ">
+                        <path d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86 " fill="#fff "></path>
+                    </svg> Link
+                    <span class="item-number ">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mySidenav" class="sidenav">
+    <div class="container" style="background-color: #2874f0; padding-top: 10px;">
+        <span class="sidenav-heading">Home</span>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
+    <a href="http://clashhacks.in/">Link</a>
+    <a href="http://clashhacks.in/">Link</a>
+    <a href="http://clashhacks.in/">Link</a>
+    <a href="http://clashhacks.in/">Link</a>
+</div>
+<br><br><br>
+    <div id="root">
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <img class="banner" src="img/banner.png" alt="">
+      </div>
+      <div class="parbox">
+        <div class="box">
+          <img src="img/ikon 1.png" width="30px">
+        </div>
+        <div class="box">
+          <img src="img/ikon 1 - Copy.png" width="30px">
+        </div>
+        <div class="box">
+          <img src="img/ikon 1 - Copy (3).png" width="30px">
+        </div>
+        
+        <div class="box">
+          <img src="img/ikon 1 - Copy (4).png" width="30px">
+        </div>
+        <div class="box">
+          <img src="img/ikon 1 - Copy (5).png" width="30px">
+        </div>
+        <div class="box">
+          <img src="img/ikon 1 - Copy (6).png" width="30px">
+        </div>
+        <div class="box">
+          <img src="img/ikon 1 - Copy (7).png" width="30px">
+        </div>
+        <div class="box">
+          <img src="img/ikon 1 - Copy (8).png" width="30px">
+        </div>
+        <div class="box">
+          <img src="img/ikon 1 - Copy (9).png" width="30px">
+        </div>
+        <div class="box">
+          <img src="img/ikon 1 - Copy (10).png" width="30px">
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <p>Kategori</p>
+    <br>
+    <br>
+    <div class="parebox">
+      <div class="box">
+        <img src="img/shopee.png" width="30px">
+      </div>
+      <div class="box">
+        <img src="img/shopee.png" width="30px">
+      </div>
+      <div class="box">
+        <img src="img/shopee.png" width="30px">
+      </div>
+      <div class="box">
+        <img src="img/shopee.png" width="30px">
+      </div>
+      <div class="box">
+        <img src="img/shopee.png" width="30px">
+      </div>
+      <div class="box">
+        <img src="img/shopee.png" width="30px">
+      </div>
+    </div>
+    <div class="parebox">
+      <div class="box">
+        <img src="img/shopee.png" width="30px">
+      </div>
+      <div class="box">
+        <img src="img/shopee.png" width="30px">
+      </div>
+      <div class="box">
+        <img src="img/shopee.png" width="30px">
+      </div>
+      <div class="box">
+        <img src="img/shopee.png" width="30px">
+      </div>
+      <div class="box">
+        <img src="img/shopee.png" width="30px">
+      </div>
+      <div class="box">
+        <img src="img/shopee.png" width="30px">
+      </div>
+    </div>
+    <div class="flashsale">
+      <div><img src="img/hp.png" alt="sale"></div>
+      <div><img src="img/hp.png" alt="sale"></div>
+      <div><img src="img/hp.png" alt="sale"></div>
+      <div><img src="img/hp.png" alt="sale"></div>
+    </div>
+    <div class="sale">
+      <img src="img/sale.png" alt="sale">
+    </div>
+<div class="saleban" style="display: flex;justify-content: space-evenly;">
+  <div><img src="img/saleban.png" alt="saleimage"></div>
+  <div><img src="img/saleban2.png" alt="selaimage"></div>
+</div>
+<div class="product">
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-danger">Go somewhere</a>
+    </div>
+  </div><div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-danger">Go somewhere</a>
+    </div>
+  </div><div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-danger">Go somewhere</a>
+    </div>
+  </div>
+</div>
+ <footer>
+   <div class="content">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>PWA is a channel where you can learn HTML,
+         CSS, and also JavaScript along with creative CSS Animations and Effects And i can React.</p>
+       </div>
+       <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+         </div>
+         <div class="email">
+           <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+         </div>
+       </div>
+     </div>
+     <div class="middle box">
+       <div class="topic">Our Services</div>
+       <div><a href="#">Web Design, Development</a></div>
+       <div><a href="#">Web UX Design, Reasearch</a></div>
+       <div><a href="#">Web User Interface Design</a></div>
+       <div><a href="#">Theme Development, Design</a></div>
+       <div><a href="#">Mobile Application Design</a></div>
+       <div><a href="#">Wire raming & Prototyping</a></div>
+     </div>
+     <div class="right box">
+       <div class="topic">Subscribe us</div>
+       <form action="#">
+         <input type="text" placeholder="Enter email address">
+         <input type="submit" name="" value="Send">
+         <div class="media-icons">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="#"><i class="fab fa-youtube"></i></a>
+           <a href="#"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright © 2021 <a href="#">Programing with ali</a> All rights reserved</p>
+   </div>
+ </footer>
+
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
